@@ -26,9 +26,11 @@ external-path;C:\Users\andre\OneDrive\Escritorio\Repositories\GPetS\GPetS.Androi
 foreground;obj\Debug\90\res\mipmap-anydpi-v26\icon.xml
 foreground;obj\Debug\90\res\mipmap-anydpi-v26\icon_round.xml
 FrameLayout;C:\Users\andre\OneDrive\Escritorio\Repositories\GPetS\GPetS.Android\obj\Debug\90\lp\39\jl\res\layout\bottomtablayout.xml
+ImageView;obj\Debug\90\res\layout\markerwindow.xml
 item;C:\Users\andre\OneDrive\Escritorio\Repositories\GPetS\GPetS.Android\obj\Debug\90\lp\39\jl\res\values\styles.xml
 item;obj\Debug\90\res\values\styles.xml
 LinearLayout;C:\Users\andre\OneDrive\Escritorio\Repositories\GPetS\GPetS.Android\obj\Debug\90\lp\39\jl\res\layout\bottomtablayout.xml
+LinearLayout;obj\Debug\90\res\layout\markerwindow.xml
 paths;C:\Users\andre\OneDrive\Escritorio\Repositories\GPetS\GPetS.Android\obj\Debug\90\lp\38\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
 resources;C:\Users\andre\OneDrive\Escritorio\Repositories\GPetS\GPetS.Android\obj\Debug\90\lp\39\jl\res\values\styles.xml
 resources;obj\Debug\90\res\values\colors.xml
@@ -39,6 +41,7 @@ set;C:\Users\andre\OneDrive\Escritorio\Repositories\GPetS\GPetS.Android\obj\Debu
 set;C:\Users\andre\OneDrive\Escritorio\Repositories\GPetS\GPetS.Android\obj\Debug\90\lp\39\jl\res\anim\exittoright.xml
 style;C:\Users\andre\OneDrive\Escritorio\Repositories\GPetS\GPetS.Android\obj\Debug\90\lp\39\jl\res\values\styles.xml
 style;obj\Debug\90\res\values\styles.xml
+TextView;obj\Debug\90\res\layout\markerwindow.xml
 translate;C:\Users\andre\OneDrive\Escritorio\Repositories\GPetS\GPetS.Android\obj\Debug\90\lp\39\jl\res\anim\enterfromleft.xml
 translate;C:\Users\andre\OneDrive\Escritorio\Repositories\GPetS\GPetS.Android\obj\Debug\90\lp\39\jl\res\anim\enterfromright.xml
 translate;C:\Users\andre\OneDrive\Escritorio\Repositories\GPetS\GPetS.Android\obj\Debug\90\lp\39\jl\res\anim\exittoleft.xml

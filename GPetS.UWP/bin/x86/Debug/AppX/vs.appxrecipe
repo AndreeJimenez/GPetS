@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Users\andre\OneDrive\Escritorio\Repositories\GPetS\GPetS.UWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-05-14T14:18:32.469</Modified>
+      <Modified>2020-05-14T17:19:32.041</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\andre\OneDrive\Escritorio\Repositories\GPetS\GPetS.UWP\bin\x86\Debug\GPetS.UWP.exe">
       <PackagePath>entrypoint\GPetS.UWP.exe</PackagePath>
-      <Modified>2020-05-14T14:18:30.829</Modified>
+      <Modified>2020-05-14T17:19:30.077</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\andre\.nuget\packages\newtonsoft.json\12.0.3\lib\netstandard2.0\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
@@ -108,7 +108,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\andre\OneDrive\Escritorio\Repositories\GPetS\GPetS\bin\Debug\netstandard2.0\GPetS.dll">
       <PackagePath>GPetS.dll</PackagePath>
-      <Modified>2020-05-14T14:18:24.255</Modified>
+      <Modified>2020-05-14T17:19:22.213</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Microsoft\Xamarin\NuGet\win2d.uwp\1.20.0\lib\uap10.0\Microsoft.Graphics.Canvas.winmd">
       <PackagePath>Microsoft.Graphics.Canvas.winmd</PackagePath>
@@ -267,11 +267,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\andre\OneDrive\Escritorio\Repositories\GPetS\GPetS.UWP\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2020-05-14T14:18:30.676</Modified>
+      <Modified>2020-05-14T17:19:29.894</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\andre\OneDrive\Escritorio\Repositories\GPetS\GPetS.UWP\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2020-05-14T14:18:30.676</Modified>
+      <Modified>2020-05-14T17:19:29.894</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.UniversalCRT.Debug\10.0.18362.0\\redist\Debug\x86\ucrtbased.dll">
       <PackagePath>ucrtbased.dll</PackagePath>
@@ -291,7 +291,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\andre\OneDrive\Escritorio\Repositories\GPetS\GPetS.UWP\bin\x86\Debug\Core\GPetS.UWP.exe">
       <PackagePath>GPetS.UWP.exe</PackagePath>
-      <Modified>2020-05-14T14:18:32.445</Modified>
+      <Modified>2020-05-14T17:19:32.032</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

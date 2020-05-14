@@ -1,7 +1,12 @@
-﻿using System;
-using GPetS.Models;
+﻿using GPetS.Models;
 using GPetS.Services;
+using GPetS.Views;
 using Plugin.Media;
+using System;
+using System.Collections.Generic;
+using System.Text;
+using System.Threading.Tasks;
+using Xamarin.Essentials;
 using Xamarin.Forms;
 
 namespace GPetS.ViewModels
@@ -13,6 +18,12 @@ namespace GPetS.ViewModels
 
         Command deleteCommand;
         public Command DeleteCommand => deleteCommand ?? (deleteCommand = new Command(DeleteAction));
+
+        Command _mapCommand;
+        public Command MapCommand => _mapCommand ?? (_mapCommand = new Command(MapAction));
+
+        Command _GetLocationCommand;
+        public Command GetLocationCommand => _GetLocationCommand ?? (_GetLocationCommand = new Command(GetLocationAction));
 
         Command cancelCommand;
         public Command CancelCommand => cancelCommand ?? (cancelCommand = new Command(CancelAction));
@@ -44,6 +55,62 @@ namespace GPetS.ViewModels
             set => SetProperty(ref _ImageUrl, value);
         }
 
+        string _Name;
+        public string Name
+        {
+            get => _Name;
+            set => SetProperty(ref _Name, value);
+        }
+
+        DateTime _PetDate;
+        public DateTime PetDate
+        {
+            get => _PetDate;
+            set => SetProperty(ref _PetDate, value);
+        }
+
+        string _Gender;
+        public string Gender
+        {
+            get => _Gender;
+            set => SetProperty(ref _Gender, value);
+        }
+
+        string _Race;
+        public string Race
+        {
+            get => _Race;
+            set => SetProperty(ref _Race, value);
+        }
+
+        string _Weight;
+        public string Weight
+        {
+            get => _Weight;
+            set => SetProperty(ref _Weight, value);
+        }
+
+        string _Comments;
+        public string Comments
+        {
+            get => _Comments;
+            set => SetProperty(ref _Comments, value);
+        }
+
+        double _Latitude;
+        public double Latitude
+        {
+            get => _Latitude;
+            set => SetProperty(ref _Latitude, value);
+        }
+
+        double _Longitude;
+        public double Longitude
+        {
+            get => _Longitude;
+            set => SetProperty(ref _Longitude, value);
+        }
+
         public PetsDetailViewModel()
         {
             PetSelected = new PetModel();
@@ -60,6 +127,7 @@ namespace GPetS.ViewModels
 
         private async void SaveAction()
         {
+            IsBusy = true;
             if (!string.IsNullOrEmpty(petSelected.ImageUrl))
             {
                 PetSelected.ImageBase64 = await new ImageService().DownloadImageAsBase64Async(petSelected.ImageUrl);
@@ -67,18 +135,53 @@ namespace GPetS.ViewModels
             await App.PetsDatabase.SavePetAsync(PetSelected);
             PetsListViewModel.GetInstance().LoadPets();
             await Application.Current.MainPage.Navigation.PopAsync();
+            IsBusy = false;
         }
 
         private async void DeleteAction()
         {
+            IsBusy = true;
             await App.PetsDatabase.DeletePetAsync(PetSelected);
             PetsListViewModel.GetInstance().LoadPets();
             await Application.Current.MainPage.Navigation.PopAsync();
+            IsBusy = false;
         }
 
         private async void CancelAction()
         {
             await Application.Current.MainPage.Navigation.PopAsync();
+        }
+
+        private void MapAction()
+        {
+            Application.Current.MainPage.Navigation.PushAsync(new PetMapPage(new PetModel
+            {
+                ID = PetSelected.ID,
+                Name = PetSelected.Name,
+                PetDate = PetSelected.PetDate,
+                Gender = PetSelected.Gender,
+                Race = PetSelected.Race,
+                Weight = PetSelected.Weight,
+                Comments = PetSelected.Comments,
+                Latitude = PetSelected.Latitude,
+                Longitude = PetSelected.Longitude,
+                ImageUrl = PetSelected.ImageUrl
+            }));
+        }
+
+        private async void GetLocationAction()
+        {
+            try
+            {
+                var location = await Geolocation.GetLastKnownLocationAsync();
+
+                if (location != null)
+                {
+                    Latitude = location.Latitude;
+                    Longitude = location.Longitude;
+                }
+            }
+            catch (Exception ex){}
         }
 
         private async void TakePictureAction()
@@ -103,14 +206,8 @@ namespace GPetS.ViewModels
             if (file == null)
                 return;
 
-            petSelected.ImageUrl = file.Path;
+            ImageUrl = await new ImageService().ConvertImageFileToBase64(file.Path);
             await Application.Current.MainPage.DisplayAlert("File Location", file.Path, "OK");
-
-            ImageSource_ = ImageSource.FromStream(() =>
-            {
-                var stream = file.GetStream();
-                return stream;
-            });
         }
 
         private async void SelectPictureAction()
@@ -134,13 +231,7 @@ namespace GPetS.ViewModels
             if (file == null)
                 return;
 
-            petSelected.ImageUrl = file.Path;
-
-            ImageSource_ = ImageSource.FromStream(() =>
-            {
-                var stream = file.GetStream();
-                return stream;
-            });
+            ImageUrl = await new ImageService().ConvertImageFileToBase64(file.Path);
         }
     }
 }

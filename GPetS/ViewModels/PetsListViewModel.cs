@@ -1,7 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using GPetS.Models;
+﻿using GPetS.Models;
 using GPetS.Views;
+using GPetS.Services;
+using System;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using Xamarin.Forms;
 
 namespace GPetS.ViewModels
@@ -10,8 +12,14 @@ namespace GPetS.ViewModels
     {
         static PetsListViewModel instance;
 
-        Command newPetCommand;
-        public Command NewPetCommand => newPetCommand ?? (newPetCommand = new Command(NewPetAction));
+        Command refreshCommand;
+        public Command RefreshCommand => refreshCommand ?? (refreshCommand = new Command(LoadPets));
+
+        Command _newCommand;
+        public Command NewCommand => _newCommand ?? (_newCommand = new Command(NewAction));
+
+        Command _selectCommand;
+        public Command SelectCommand => _selectCommand ?? (_selectCommand = new Command(SelectAction));
 
         List<PetModel> pets;
         public List<PetModel> Pets
@@ -28,9 +36,16 @@ namespace GPetS.ViewModels
             {
                 if (SetProperty(ref petSelected, value))
                 {
-                    SelectPetAction();
+                    SelectAction();
                 }
             }
+        }
+
+        ObservableCollection<PetModel> _Trips;
+        public ObservableCollection<PetModel> Trips
+        {
+            get => _Trips;
+            set => SetProperty(ref _Trips, value);
         }
 
         public PetsListViewModel()
@@ -48,15 +63,17 @@ namespace GPetS.ViewModels
 
         public async void LoadPets()
         {
+            IsBusy = true;
             Pets = await App.PetsDatabase.GetAllPetsAsync();
+            IsBusy = false;
         }
 
-        private void NewPetAction()
+        private void NewAction()
         {
             Application.Current.MainPage.Navigation.PushAsync(new PetsDetailPage());
         }
 
-        private void SelectPetAction()
+        private void SelectAction()
         {
             Application.Current.MainPage.Navigation.PushAsync(new PetsDetailPage(PetSelected));
         }

@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:converter="clr-namespace:GPetS.Converters"
              mc:Ignorable="d"
              x:Class="GPetS.Views.PetsListPage"
              Title="GPetS">
@@ -20,30 +21,62 @@
             </ToolbarItem.IconImageSource>
         </ToolbarItem>
     </ContentPage.ToolbarItems>
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <converter:ImageConverter x:Key="ImageConverter" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
     <ContentPage.Content>
-        <ListView
-            Margin="20"
-            ItemsSource="{Binding Pets}"
-            SelectedItem="{Binding PetSelected}">
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <ViewCell>
-                        <StackLayout
-                            Margin="20, 0, 0, 0"
-                            Orientation="Horizontal"
-                            HorizontalOptions="FillAndExpand">
-                            <Label
-                                Text="{Binding Name}"
-                                VerticalTextAlignment="Center"
-                                HorizontalOptions="StartAndExpand" />
+        <RefreshView 
+            IsRefreshing="{Binding IsBusy}"
+            Command="{Binding RefreshCommand}">
+            <CollectionView
+                SelectionMode="Single"
+                ItemsSource="{Binding Pets}"
+                SelectedItem="{Binding PetSelected}"
+                SelectionChangedCommand="{Binding SelectCommand}"
+                x:Name="PetsColView">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid
+                            Padding="5">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="2*" />
+                                <ColumnDefinition Width="3*" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
                             <Image
-                                Source="check.png"
-                                HorizontalOptions="End"
-                                IsVisible="{Binding Done}" />
-                        </StackLayout>
-                    </ViewCell>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
+                                Grid.Row="0"
+                                Grid.Column="0"
+                                Grid.RowSpan="3"
+                                HeightRequest="150"
+                                WidthRequest="150"
+                                Aspect="AspectFill"
+                                VerticalOptions="CenterAndExpand"
+                                HorizontalOptions="CenterAndExpand"
+                                Source="{Binding ImageUrl, Converter={StaticResource ImageConverter}}"
+                                d:Source="not_found" />
+                            <Label
+                                Grid.Row="0"
+                                Grid.Column="1"
+                                Text="{Binding Name}"
+                                d:Text="Name"
+                                TextColor="White"
+                                FontSize="Large" />
+                            <Label
+                                Grid.Row="1"
+                                Grid.Column="1"
+                                TextColor="White"
+                                d:Text="Birthday"
+                                Text="{Binding PetDate, StringFormat='{0:dd MMM yy}'}" />
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </RefreshView>
     </ContentPage.Content>
 </ContentPage>

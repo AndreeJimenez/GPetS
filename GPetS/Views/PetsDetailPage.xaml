@@ -3,62 +3,63 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:converter="clr-namespace:GPetS.Converters"
+             xmlns:renders="clr-namespace:GPetS.Renders"
              mc:Ignorable="d"
              x:Class="GPetS.Views.PetsDetailPage"
              Title="Pet Detail">
-    <StackLayout
-        Margin="20"
-        VerticalOptions="StartAndExpand">
-        <Label
-            Text="Title"
-            TextColor="#1D2731"/>
-        <Entry
-            Text="{Binding PetSelected.Name}"
-            TextColor="#1D2731"/>
-        <Label
-            Text="Notes"
-            TextColor="#1D2731"/>
-        <Entry
-            Text="{Binding PetSelected.Notes}"
-            TextColor="#1D2731"/>
-        <Label
-            Text="Done"
-            TextColor="#1D2731"/>
-        <Switch
-            IsToggled="{Binding PetSelected.Done}"/>
-        <Label
-            Text="Pet Image"
-            TextColor="#1D2731"/>
-        <Image Source="{Binding ImageSource_}"
-               WidthRequest="100"/>
-        <Button
-            Text="Take Picture"
-            Command="{Binding TakePictureCommand}"
-            TextColor="#D9B310"
-            BackgroundColor="#0B3C5D"
-            BorderColor="#D9B310"
-            BorderWidth="1"/>
-        <Button
-            Text="Select Picture"
-            Command="{Binding SelectPictureCommand}"
-            TextColor="#D9B310"
-            BackgroundColor="#0B3C5D"
-            BorderColor="#faa4a3"
-            BorderWidth="1"/>
-        <Button
-            Text="Save"
-            Command="{Binding SaveCommand}"
-            BackgroundColor="#0B3C5D"
-            TextColor="#D9B310"/>
-        <Button
-            Text="Delete"
-            Command="{Binding DeleteCommand}"
-            BackgroundColor="#0B3C5D"
-            TextColor="#D9B310"/>
-        <Button
-            Text="Cancel"
-            Command="{Binding CancelCommand}"
-            BackgroundColor="#0B3C5D"
-            TextColor="#D9B310"/>
-    </StackLayout>
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <converter:ImageConverter x:Key="ImageConverter" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Delete" Command="{Binding DeleteCommand}" />
+        <ToolbarItem Text="Save" Command="{Binding SaveCommand}" />
+        <ToolbarItem Text="Map" Command="{Binding MapCommand}" />
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <ActivityIndicator
+                    IsRunning="{Binding IsBusy}"
+                    d:IsRunning="True" />
+                <Entry 
+                    Placeholder="Name" 
+                    Text="{Binding Name}" />
+                <DatePicker
+                    Date="{Binding PetDate}" />
+                <Entry 
+                    Placeholder="Gender" 
+                    Text="{Binding Gender}" />
+                <Entry 
+                    Placeholder="Race" 
+                    Text="{Binding Race}" />
+                <Entry 
+                    Placeholder="Weight" 
+                    Text="{Binding Weight}" />
+                <Entry
+                    Placeholder="Latitud"
+                    Text="{Binding Latitude}" />
+                <Entry
+                    Placeholder="Longitud"
+                    Text="{Binding Longitude}" />
+                <Button
+                    Text="Get Location"
+                    Command="{Binding GetLocationCommand}" />
+                <Image
+                    Source="{Binding ImageUrl, Converter={StaticResource ImageConverter}}" />
+                <Button
+                    Text="Take Picture"
+                    Command="{Binding TakePictureCommand}" />
+                <Button
+                    Text="Select Picture"
+                    Command="{Binding SelectPictureCommand}" />
+                <Editor
+                    Placeholder="Comments"
+                    VerticalOptions="FillAndExpand"
+                    Text="{Binding Comments}" />
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
 </ContentPage>
