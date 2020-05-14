@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "bY7DqIWg6bC+P2l3JcYbpGxPfg0l86SMcbTYKRXGINEbV2MN41tZNwdzLwefe7R+RbbR5/YHUD74zHkTOmDO2w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\andre\\OneDrive\\Escritorio\\Repositories\\GPetS\\GPetS.iOS\\GPetS.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\andre\\.nuget\\packages\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
+    "C:\\Users\\andre\\.nuget\\packages\\xamarin.forms\\4.6.0.726\\xamarin.forms.4.6.0.726.nupkg.sha512"
+  ],
+  "logs": []
+}
