@@ -24,7 +24,7 @@ namespace GPetS.Data
             InitializeAsync().SafeFireAndForget(false);
         }
 
-        async Pet InitializeAsync()
+        async Task InitializeAsync()
         {
             if (!initialized)
             {
@@ -36,22 +36,22 @@ namespace GPetS.Data
             }
         }
 
-        public Pet<List<PetModel>> GetAllPetsAsync()
+        public Task<List<PetModel>> GetAllPetsAsync()
         {
             return Database.Table<PetModel>().ToListAsync();
         }
 
-        public Pet<List<PetModel>> GetPetsNotDoneAsync()
+        public Task<List<PetModel>> GetPetsNotDoneAsync()
         {
             return Database.QueryAsync<PetModel>($"SELECT * FROM [{typeof(PetModel).Name}] WHERE [Done] = 0");
         }
 
-        public Pet<PetModel> GetPetAsync(int id)
+        public Task<PetModel> GetPetAsync(int id)
         {
             return Database.Table<PetModel>().Where(i => i.ID == id).FirstOrDefaultAsync();
         }
 
-        public Pet<int> SavePetAsync(PetModel item)
+        public Task<int> SavePetAsync(PetModel item)
         {
             if (item.ID != 0)
             {
@@ -63,7 +63,7 @@ namespace GPetS.Data
             }
         }
 
-        public Pet<int> DeletePetAsync(PetModel item)
+        public Task<int> DeletePetAsync(PetModel item)
         {
             return Database.DeleteAsync(item);
         }

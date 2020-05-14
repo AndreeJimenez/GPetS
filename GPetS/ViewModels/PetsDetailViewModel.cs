@@ -64,15 +64,15 @@ namespace GPetS.ViewModels
             {
                 PetSelected.ImageBase64 = await new ImageService().DownloadImageAsBase64Async(petSelected.ImageUrl);
             }
-            await App.PetsDatabase.SaveTaskAsync(PetSelected);
-            TasksListViewModel.GetInstance().LoadTasks();
+            await App.PetsDatabase.SavePetAsync(PetSelected);
+            PetsListViewModel.GetInstance().LoadPets();
             await Application.Current.MainPage.Navigation.PopAsync();
         }
 
         private async void DeleteAction()
         {
-            await App.PetsDatabase.DeleteTaskAsync(PetSelected);
-            TasksListViewModel.GetInstance().LoadTasks();
+            await App.PetsDatabase.DeletePetAsync(PetSelected);
+            PetsListViewModel.GetInstance().LoadPets();
             await Application.Current.MainPage.Navigation.PopAsync();
         }
 

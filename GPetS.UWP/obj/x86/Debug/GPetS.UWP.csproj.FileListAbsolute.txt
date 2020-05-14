@@ -126,3 +126,16 @@ C:\Users\andre\OneDrive\Escritorio\Repositories\GPetS\GPetS.UWP\obj\x86\Debug\Mu
 C:\Users\andre\OneDrive\Escritorio\Repositories\GPetS\GPetS.UWP\obj\x86\Debug\ProjectArchitectures.txt
 C:\Users\andre\OneDrive\Escritorio\Repositories\GPetS\GPetS.UWP\obj\x86\Debug\.winmd_cache\$Microsoft.Graphics.Canvas.winmd_636160931180000000.json
 C:\Users\andre\OneDrive\Escritorio\Repositories\GPetS\GPetS.UWP\obj\x86\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_636885526160000000.json
+C:\Users\andre\OneDrive\Escritorio\Repositories\GPetS\GPetS.UWP\bin\x86\Debug\Newtonsoft.Json.dll
+C:\Users\andre\OneDrive\Escritorio\Repositories\GPetS\GPetS.UWP\bin\x86\Debug\SQLite-net.dll
+C:\Users\andre\OneDrive\Escritorio\Repositories\GPetS\GPetS.UWP\bin\x86\Debug\SQLitePCLRaw.batteries_green.dll
+C:\Users\andre\OneDrive\Escritorio\Repositories\GPetS\GPetS.UWP\bin\x86\Debug\SQLitePCLRaw.batteries_v2.dll
+C:\Users\andre\OneDrive\Escritorio\Repositories\GPetS\GPetS.UWP\bin\x86\Debug\SQLitePCLRaw.core.dll
+C:\Users\andre\OneDrive\Escritorio\Repositories\GPetS\GPetS.UWP\bin\x86\Debug\e_sqlite3.dll
+C:\Users\andre\OneDrive\Escritorio\Repositories\GPetS\GPetS.UWP\bin\x86\Debug\SQLitePCLRaw.provider.e_sqlite3.dll
+C:\Users\andre\OneDrive\Escritorio\Repositories\GPetS\GPetS.UWP\bin\x86\Debug\Plugin.Media.dll
+C:\Users\andre\OneDrive\Escritorio\Repositories\GPetS\GPetS.UWP\bin\x86\Debug\Plugin.Media.pdb
+C:\Users\andre\OneDrive\Escritorio\Repositories\GPetS\GPetS.UWP\bin\x86\Debug\Xamarin.Forms.Maps.UWP.dll
+C:\Users\andre\OneDrive\Escritorio\Repositories\GPetS\GPetS.UWP\bin\x86\Debug\Xamarin.Forms.Maps.dll
+C:\Users\andre\OneDrive\Escritorio\Repositories\GPetS\GPetS.UWP\obj\x86\Debug\Plugin.Media.pri.xml
+C:\Users\andre\OneDrive\Escritorio\Repositories\GPetS\GPetS.UWP\obj\x86\Debug\Xamarin.Forms.Maps.UWP.pri.xml

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Net.Http;
 using System.Text;
-using System.Threading.GPetS;
+using System.Threading.Tasks;
 using Xamarin.Forms;
 
 namespace GPetS.Services
@@ -17,7 +17,7 @@ namespace GPetS.Services
             Timeout = TimeSpan.FromSeconds(DownloadImageTimeoutSeconds)
         };
 
-        public async Pet<string> DownloadImageAsBase64Async(string imageUrl)
+        public async Task<string> DownloadImageAsBase64Async(string imageUrl)
         {
             byte[] imageByteArray = System.IO.File.ReadAllBytes(imageUrl);
             return System.Convert.ToBase64String(imageByteArray);
@@ -37,7 +37,7 @@ namespace GPetS.Services
             }
         }
 
-        public async Pet<string> ConvertImageFileToBase64(string filePath)
+        public async Task<string> ConvertImageFileToBase64(string filePath)
         {
             if (!string.IsNullOrEmpty(filePath))
             {
