@@ -39,3 +39,9 @@ Xamarin.Android.Support.ViewPager
 Xamarin.Essentials
 Xamarin.Forms.Platform.Android
 Xamarin.Forms.Platform
+Plugin.Media
+Xamarin.Forms.Maps.Android
+Xamarin.GooglePlayServices.Base
+Xamarin.GooglePlayServices.Basement
+Xamarin.GooglePlayServices.Maps
+Xamarin.GooglePlayServices.Tasks

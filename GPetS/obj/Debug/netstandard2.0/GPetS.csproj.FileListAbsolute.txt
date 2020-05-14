@@ -18,10 +18,9 @@ C:\Users\andre\OneDrive\Escritorio\Repositories\GPetS\GPetS\bin\Debug\netstandar
 C:\Users\andre\OneDrive\Escritorio\Repositories\GPetS\GPetS\bin\Debug\netstandard2.0\GPetS.pdb
 C:\Users\andre\OneDrive\Escritorio\Repositories\GPetS\GPetS\obj\Debug\netstandard2.0\App.xaml.g.cs
 C:\Users\andre\OneDrive\Escritorio\Repositories\GPetS\GPetS\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
-C:\Users\andre\OneDrive\Escritorio\Repositories\GPetS\GPetS\obj\Debug\netstandard2.0\GPetS.csproj.CoreCompileInputs.cache
 C:\Users\andre\OneDrive\Escritorio\Repositories\GPetS\GPetS\obj\Debug\netstandard2.0\GPetS.AssemblyInfoInputs.cache
 C:\Users\andre\OneDrive\Escritorio\Repositories\GPetS\GPetS\obj\Debug\netstandard2.0\GPetS.AssemblyInfo.cs
-C:\Users\andre\OneDrive\Escritorio\Repositories\GPetS\GPetS\obj\Debug\netstandard2.0\XamlC.stamp
 C:\Users\andre\OneDrive\Escritorio\Repositories\GPetS\GPetS\obj\Debug\netstandard2.0\GPetS.dll
 C:\Users\andre\OneDrive\Escritorio\Repositories\GPetS\GPetS\obj\Debug\netstandard2.0\ref\GPetS.dll
 C:\Users\andre\OneDrive\Escritorio\Repositories\GPetS\GPetS\obj\Debug\netstandard2.0\GPetS.pdb
+C:\Users\andre\OneDrive\Escritorio\Repositories\GPetS\GPetS\obj\Debug\netstandard2.0\GPetS.csprojAssemblyReference.cache
