@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "1zGXj558z4dXV+TcwclrGHhoTnLTUX/EZ3TLs7k3rxtrso8Gy4VH6CWhYIquSCBDUjUhgCtVGfCNgchIT3o89g==",
+  "dgSpecHash": "lghmPylwaIL5MGfL4Q8J6iRkXfCuXeWnV7lloO6dFDwt5Ugeag+cFXSDV6cpXJVBLLN6Do7qq1R4S5gWor9gHQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\andre\\OneDrive\\Escritorio\\Repositories\\GPetS\\GPetS.UWP\\GPetS.UWP.csproj",
   "expectedPackageFiles": [
@@ -37,8 +37,8 @@
     "C:\\Microsoft\\Xamarin\\NuGet\\win2d.uwp\\1.20.0\\win2d.uwp.1.20.0.nupkg.sha512",
     "C:\\Users\\andre\\.nuget\\packages\\xam.plugin.media\\5.0.1\\xam.plugin.media.5.0.1.nupkg.sha512",
     "C:\\Users\\andre\\.nuget\\packages\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
-    "C:\\Users\\andre\\.nuget\\packages\\xamarin.forms\\4.6.0.726\\xamarin.forms.4.6.0.726.nupkg.sha512",
-    "C:\\Users\\andre\\.nuget\\packages\\xamarin.forms.maps\\4.6.0.726\\xamarin.forms.maps.4.6.0.726.nupkg.sha512"
+    "C:\\Users\\andre\\.nuget\\packages\\xamarin.forms\\4.6.0.772\\xamarin.forms.4.6.0.772.nupkg.sha512",
+    "C:\\Users\\andre\\.nuget\\packages\\xamarin.forms.maps\\4.6.0.772\\xamarin.forms.maps.4.6.0.772.nupkg.sha512"
   ],
   "logs": []
 }

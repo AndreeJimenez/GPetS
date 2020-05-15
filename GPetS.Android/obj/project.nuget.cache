@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "tM2fZBmCBPe5nfQjmqC5ZtiLd5+oAvaD3JqAi4u2JvoPVEb6MuBaZxgKrNrXTrMtgftlr30gtsl+dEqh8us71g==",
+  "dgSpecHash": "aKZtdK373xYGRgamVuCl0VlLsY+9xuVBe7pwCCIxbm/GE4aZKKgC5nuXWv2DZnarMVUQGnHhJNmonx6Z1RpaZg==",
   "success": true,
   "projectFilePath": "C:\\Users\\andre\\OneDrive\\Escritorio\\Repositories\\GPetS\\GPetS.Android\\GPetS.Android.csproj",
   "expectedPackageFiles": [
@@ -50,8 +50,8 @@
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.android.support.viewpager\\28.0.0.3\\xamarin.android.support.viewpager.28.0.0.3.nupkg.sha512",
     "C:\\Users\\andre\\.nuget\\packages\\xamarin.build.download\\0.4.11\\xamarin.build.download.0.4.11.nupkg.sha512",
     "C:\\Users\\andre\\.nuget\\packages\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
-    "C:\\Users\\andre\\.nuget\\packages\\xamarin.forms\\4.6.0.726\\xamarin.forms.4.6.0.726.nupkg.sha512",
-    "C:\\Users\\andre\\.nuget\\packages\\xamarin.forms.maps\\4.6.0.726\\xamarin.forms.maps.4.6.0.726.nupkg.sha512",
+    "C:\\Users\\andre\\.nuget\\packages\\xamarin.forms\\4.6.0.772\\xamarin.forms.4.6.0.772.nupkg.sha512",
+    "C:\\Users\\andre\\.nuget\\packages\\xamarin.forms.maps\\4.6.0.772\\xamarin.forms.maps.4.6.0.772.nupkg.sha512",
     "C:\\Users\\andre\\.nuget\\packages\\xamarin.googleplayservices.base\\71.1610.0\\xamarin.googleplayservices.base.71.1610.0.nupkg.sha512",
     "C:\\Users\\andre\\.nuget\\packages\\xamarin.googleplayservices.basement\\71.1620.0\\xamarin.googleplayservices.basement.71.1620.0.nupkg.sha512",
     "C:\\Users\\andre\\.nuget\\packages\\xamarin.googleplayservices.maps\\71.1610.0\\xamarin.googleplayservices.maps.71.1610.0.nupkg.sha512",

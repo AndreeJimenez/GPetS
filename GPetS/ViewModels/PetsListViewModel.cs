@@ -41,13 +41,6 @@ namespace GPetS.ViewModels
             }
         }
 
-        ObservableCollection<PetModel> _Trips;
-        public ObservableCollection<PetModel> Trips
-        {
-            get => _Trips;
-            set => SetProperty(ref _Trips, value);
-        }
-
         public PetsListViewModel()
         {
             instance = this;
@@ -63,7 +56,6 @@ namespace GPetS.ViewModels
 
         public async void LoadPets()
         {
-            IsBusy = true;
             Pets = await App.PetsDatabase.GetAllPetsAsync();
             IsBusy = false;
         }

@@ -26,29 +26,29 @@
                     d:IsRunning="True" />
                 <Entry 
                     Placeholder="Name" 
-                    Text="{Binding Name}" />
+                    Text="{Binding PetSelected.Name}" />
                 <DatePicker
-                    Date="{Binding PetDate}" />
+                    Date="{Binding PetSelected.PetDate}" />
                 <Entry 
                     Placeholder="Gender" 
-                    Text="{Binding Gender}" />
+                    Text="{Binding PetSelected.Gender}" />
                 <Entry 
                     Placeholder="Race" 
-                    Text="{Binding Race}" />
+                    Text="{Binding PetSelected.Race}" />
                 <Entry 
                     Placeholder="Weight" 
-                    Text="{Binding Weight}" />
+                    Text="{Binding PetSelected.Weight}" />
                 <Entry
                     Placeholder="Latitud"
-                    Text="{Binding Latitude}" />
+                    Text="{Binding PetSelected.Latitude}" />
                 <Entry
                     Placeholder="Longitud"
-                    Text="{Binding Longitude}" />
+                    Text="{Binding PetSelected.Longitude}" />
                 <Button
                     Text="Get Location"
                     Command="{Binding GetLocationCommand}" />
                 <Image
-                    Source="{Binding ImageUrl, Converter={StaticResource ImageConverter}}" />
+                    Source="{Binding ImageBase64, Converter={StaticResource ImageConverter}}" />
                 <Button
                     Text="Take Picture"
                     Command="{Binding TakePictureCommand}" />

@@ -448,7 +448,7 @@
           "lib/uap10.0.16299/Xamarin.Essentials.dll": {}
         }
       },
-      "Xamarin.Forms/4.6.0.726": {
+      "Xamarin.Forms/4.6.0.772": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "6.0.15",
@@ -472,10 +472,10 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
-      "Xamarin.Forms.Maps/4.6.0.726": {
+      "Xamarin.Forms.Maps/4.6.0.772": {
         "type": "package",
         "dependencies": {
-          "Xamarin.Forms": "4.6.0.726"
+          "Xamarin.Forms": "4.6.0.772"
         },
         "compile": {
           "lib/uap10.0.16299/Xamarin.Forms.Maps.UWP.dll": {},
@@ -493,8 +493,8 @@
           "Newtonsoft.Json": "12.0.3",
           "Xam.Plugin.Media": "5.0.1",
           "Xamarin.Essentials": "1.5.3.2",
-          "Xamarin.Forms": "4.6.0.726",
-          "Xamarin.Forms.Maps": "4.6.0.726",
+          "Xamarin.Forms": "4.6.0.772",
+          "Xamarin.Forms.Maps": "4.6.0.772",
           "sqlite-net-pcl": "1.6.292"
         },
         "compile": {
@@ -1109,7 +1109,7 @@
           "lib/uap10.0.16299/Xamarin.Essentials.dll": {}
         }
       },
-      "Xamarin.Forms/4.6.0.726": {
+      "Xamarin.Forms/4.6.0.772": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "6.0.15",
@@ -1133,10 +1133,10 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
-      "Xamarin.Forms.Maps/4.6.0.726": {
+      "Xamarin.Forms.Maps/4.6.0.772": {
         "type": "package",
         "dependencies": {
-          "Xamarin.Forms": "4.6.0.726"
+          "Xamarin.Forms": "4.6.0.772"
         },
         "compile": {
           "lib/uap10.0.16299/Xamarin.Forms.Maps.UWP.dll": {},
@@ -1154,8 +1154,8 @@
           "Newtonsoft.Json": "12.0.3",
           "Xam.Plugin.Media": "5.0.1",
           "Xamarin.Essentials": "1.5.3.2",
-          "Xamarin.Forms": "4.6.0.726",
-          "Xamarin.Forms.Maps": "4.6.0.726",
+          "Xamarin.Forms": "4.6.0.772",
+          "Xamarin.Forms.Maps": "4.6.0.772",
           "sqlite-net-pcl": "1.6.292"
         },
         "compile": {
@@ -1771,7 +1771,7 @@
           "lib/uap10.0.16299/Xamarin.Essentials.dll": {}
         }
       },
-      "Xamarin.Forms/4.6.0.726": {
+      "Xamarin.Forms/4.6.0.772": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "6.0.15",
@@ -1795,10 +1795,10 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
-      "Xamarin.Forms.Maps/4.6.0.726": {
+      "Xamarin.Forms.Maps/4.6.0.772": {
         "type": "package",
         "dependencies": {
-          "Xamarin.Forms": "4.6.0.726"
+          "Xamarin.Forms": "4.6.0.772"
         },
         "compile": {
           "lib/uap10.0.16299/Xamarin.Forms.Maps.UWP.dll": {},
@@ -1816,8 +1816,8 @@
           "Newtonsoft.Json": "12.0.3",
           "Xam.Plugin.Media": "5.0.1",
           "Xamarin.Essentials": "1.5.3.2",
-          "Xamarin.Forms": "4.6.0.726",
-          "Xamarin.Forms.Maps": "4.6.0.726",
+          "Xamarin.Forms": "4.6.0.772",
+          "Xamarin.Forms.Maps": "4.6.0.772",
           "sqlite-net-pcl": "1.6.292"
         },
         "compile": {
@@ -2427,7 +2427,7 @@
           "lib/uap10.0.16299/Xamarin.Essentials.dll": {}
         }
       },
-      "Xamarin.Forms/4.6.0.726": {
+      "Xamarin.Forms/4.6.0.772": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "6.0.15",
@@ -2451,10 +2451,10 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
-      "Xamarin.Forms.Maps/4.6.0.726": {
+      "Xamarin.Forms.Maps/4.6.0.772": {
         "type": "package",
         "dependencies": {
-          "Xamarin.Forms": "4.6.0.726"
+          "Xamarin.Forms": "4.6.0.772"
         },
         "compile": {
           "lib/uap10.0.16299/Xamarin.Forms.Maps.UWP.dll": {},
@@ -2472,8 +2472,8 @@
           "Newtonsoft.Json": "12.0.3",
           "Xam.Plugin.Media": "5.0.1",
           "Xamarin.Essentials": "1.5.3.2",
-          "Xamarin.Forms": "4.6.0.726",
-          "Xamarin.Forms.Maps": "4.6.0.726",
+          "Xamarin.Forms": "4.6.0.772",
+          "Xamarin.Forms.Maps": "4.6.0.772",
           "sqlite-net-pcl": "1.6.292"
         },
         "compile": {
@@ -3088,7 +3088,7 @@
           "lib/uap10.0.16299/Xamarin.Essentials.dll": {}
         }
       },
-      "Xamarin.Forms/4.6.0.726": {
+      "Xamarin.Forms/4.6.0.772": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "6.0.15",
@@ -3112,10 +3112,10 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
-      "Xamarin.Forms.Maps/4.6.0.726": {
+      "Xamarin.Forms.Maps/4.6.0.772": {
         "type": "package",
         "dependencies": {
-          "Xamarin.Forms": "4.6.0.726"
+          "Xamarin.Forms": "4.6.0.772"
         },
         "compile": {
           "lib/uap10.0.16299/Xamarin.Forms.Maps.UWP.dll": {},
@@ -3133,8 +3133,8 @@
           "Newtonsoft.Json": "12.0.3",
           "Xam.Plugin.Media": "5.0.1",
           "Xamarin.Essentials": "1.5.3.2",
-          "Xamarin.Forms": "4.6.0.726",
-          "Xamarin.Forms.Maps": "4.6.0.726",
+          "Xamarin.Forms": "4.6.0.772",
+          "Xamarin.Forms.Maps": "4.6.0.772",
           "sqlite-net-pcl": "1.6.292"
         },
         "compile": {
@@ -3750,7 +3750,7 @@
           "lib/uap10.0.16299/Xamarin.Essentials.dll": {}
         }
       },
-      "Xamarin.Forms/4.6.0.726": {
+      "Xamarin.Forms/4.6.0.772": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "6.0.15",
@@ -3774,10 +3774,10 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
-      "Xamarin.Forms.Maps/4.6.0.726": {
+      "Xamarin.Forms.Maps/4.6.0.772": {
         "type": "package",
         "dependencies": {
-          "Xamarin.Forms": "4.6.0.726"
+          "Xamarin.Forms": "4.6.0.772"
         },
         "compile": {
           "lib/uap10.0.16299/Xamarin.Forms.Maps.UWP.dll": {},
@@ -3795,8 +3795,8 @@
           "Newtonsoft.Json": "12.0.3",
           "Xam.Plugin.Media": "5.0.1",
           "Xamarin.Essentials": "1.5.3.2",
-          "Xamarin.Forms": "4.6.0.726",
-          "Xamarin.Forms.Maps": "4.6.0.726",
+          "Xamarin.Forms": "4.6.0.772",
+          "Xamarin.Forms.Maps": "4.6.0.772",
           "sqlite-net-pcl": "1.6.292"
         },
         "compile": {
@@ -4411,7 +4411,7 @@
           "lib/uap10.0.16299/Xamarin.Essentials.dll": {}
         }
       },
-      "Xamarin.Forms/4.6.0.726": {
+      "Xamarin.Forms/4.6.0.772": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "6.0.15",
@@ -4435,10 +4435,10 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
-      "Xamarin.Forms.Maps/4.6.0.726": {
+      "Xamarin.Forms.Maps/4.6.0.772": {
         "type": "package",
         "dependencies": {
-          "Xamarin.Forms": "4.6.0.726"
+          "Xamarin.Forms": "4.6.0.772"
         },
         "compile": {
           "lib/uap10.0.16299/Xamarin.Forms.Maps.UWP.dll": {},
@@ -4456,8 +4456,8 @@
           "Newtonsoft.Json": "12.0.3",
           "Xam.Plugin.Media": "5.0.1",
           "Xamarin.Essentials": "1.5.3.2",
-          "Xamarin.Forms": "4.6.0.726",
-          "Xamarin.Forms.Maps": "4.6.0.726",
+          "Xamarin.Forms": "4.6.0.772",
+          "Xamarin.Forms.Maps": "4.6.0.772",
           "sqlite-net-pcl": "1.6.292"
         },
         "compile": {
@@ -5073,7 +5073,7 @@
           "lib/uap10.0.16299/Xamarin.Essentials.dll": {}
         }
       },
-      "Xamarin.Forms/4.6.0.726": {
+      "Xamarin.Forms/4.6.0.772": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "6.0.15",
@@ -5097,10 +5097,10 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
-      "Xamarin.Forms.Maps/4.6.0.726": {
+      "Xamarin.Forms.Maps/4.6.0.772": {
         "type": "package",
         "dependencies": {
-          "Xamarin.Forms": "4.6.0.726"
+          "Xamarin.Forms": "4.6.0.772"
         },
         "compile": {
           "lib/uap10.0.16299/Xamarin.Forms.Maps.UWP.dll": {},
@@ -5118,8 +5118,8 @@
           "Newtonsoft.Json": "12.0.3",
           "Xam.Plugin.Media": "5.0.1",
           "Xamarin.Essentials": "1.5.3.2",
-          "Xamarin.Forms": "4.6.0.726",
-          "Xamarin.Forms.Maps": "4.6.0.726",
+          "Xamarin.Forms": "4.6.0.772",
+          "Xamarin.Forms.Maps": "4.6.0.772",
           "sqlite-net-pcl": "1.6.292"
         },
         "compile": {
@@ -9846,10 +9846,10 @@
         "xamarin.essentials.nuspec"
       ]
     },
-    "Xamarin.Forms/4.6.0.726": {
-      "sha512": "NI7iL5NnrQN/gCyoHLlexcDndNin67hFV7ObG8QQU2zbEi15B1SRaAsuiNeXVYAHfXg3/amqryqzGd+3R6lyZQ==",
+    "Xamarin.Forms/4.6.0.772": {
+      "sha512": "tRxuc7x0PgLYZRjRvs2mm3D8KnkKgCCYOuXHnqOjcXWUJWBDmexM8R7LxWPyEBSLMU55SGl+RRcFvHZcOSsgMA==",
       "type": "package",
-      "path": "xamarin.forms/4.6.0.726",
+      "path": "xamarin.forms/4.6.0.772",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -10155,14 +10155,14 @@
         "lib/uap10.0.16299/Xamarin.Forms.Xaml.dll",
         "lib/uap10.0.16299/Xamarin.Forms.Xaml.pdb",
         "lib/uap10.0.16299/Xamarin.Forms.Xaml.xml",
-        "xamarin.forms.4.6.0.726.nupkg.sha512",
+        "xamarin.forms.4.6.0.772.nupkg.sha512",
         "xamarin.forms.nuspec"
       ]
     },
-    "Xamarin.Forms.Maps/4.6.0.726": {
-      "sha512": "+iCq0456mZNFKJj66oRCV1W5TE3gDjCG40uW2yX/zeITAUtF+c7K0WLXSQ54838B6cE4B6zBg/AQKltaVdr2iw==",
+    "Xamarin.Forms.Maps/4.6.0.772": {
+      "sha512": "Yo1Lly8gyGuX/Wxp/dbfnyrnkJgAxp+brA2+Qk8grSotbtsi9hle4vJ7aeeqUvI5Ws0PtteCEyAk8+bOJpWx9A==",
       "type": "package",
-      "path": "xamarin.forms.maps/4.6.0.726",
+      "path": "xamarin.forms.maps/4.6.0.772",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -10191,7 +10191,7 @@
         "lib/uap10.0.16299/Xamarin.Forms.Maps.UWP.dll",
         "lib/uap10.0.16299/Xamarin.Forms.Maps.UWP.pri",
         "lib/uap10.0.16299/Xamarin.Forms.Maps.dll",
-        "xamarin.forms.maps.4.6.0.726.nupkg.sha512",
+        "xamarin.forms.maps.4.6.0.772.nupkg.sha512",
         "xamarin.forms.maps.nuspec"
       ]
     },
@@ -10208,8 +10208,8 @@
       "Newtonsoft.Json >= 12.0.3",
       "Xam.Plugin.Media >= 5.0.1",
       "Xamarin.Essentials >= 1.5.3.2",
-      "Xamarin.Forms >= 4.6.0.726",
-      "Xamarin.Forms.Maps >= 4.6.0.726"
+      "Xamarin.Forms >= 4.6.0.772",
+      "Xamarin.Forms.Maps >= 4.6.0.772"
     ]
   },
   "packageFolders": {
@@ -10274,11 +10274,11 @@
           },
           "Xamarin.Forms": {
             "target": "Package",
-            "version": "[4.6.0.726, )"
+            "version": "[4.6.0.772, )"
           },
           "Xamarin.Forms.Maps": {
             "target": "Package",
-            "version": "[4.6.0.726, )"
+            "version": "[4.6.0.772, )"
           }
         },
         "imports": [

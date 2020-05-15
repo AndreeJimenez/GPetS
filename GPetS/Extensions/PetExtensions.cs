@@ -7,13 +7,13 @@ namespace GPetS.Extensions
 {
     public static class PetExtensions
     {
-		public static async void SafeFireAndForget(this Task task,
+		public static async void SafeFireAndForget(this Task pet,
 												   bool returnToCallingContext,
 												   Action<Exception> onException = null)
 		{
 			try
 			{
-				await task.ConfigureAwait(returnToCallingContext);
+				await pet.ConfigureAwait(returnToCallingContext);
 			}
 			catch (Exception ex) when (onException != null)
 			{

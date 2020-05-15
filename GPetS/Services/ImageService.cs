@@ -17,9 +17,31 @@ namespace GPetS.Services
             Timeout = TimeSpan.FromSeconds(DownloadImageTimeoutSeconds)
         };
 
+        async Task<byte[]> DownloadImageAsync(string imageUrl)
+        {
+            try
+            {
+                using (HttpResponseMessage httpResponse = await HttpClient_.GetAsync(imageUrl))
+                {
+                    if (httpResponse.StatusCode == System.Net.HttpStatusCode.OK)
+                    {
+                        return await httpResponse.Content.ReadAsByteArrayAsync();
+                    }
+                    else
+                    {
+                        return null;
+                    }
+                }
+            }
+            catch
+            {
+                return null;
+            }
+        }
+
         public async Task<string> DownloadImageAsBase64Async(string imageUrl)
         {
-            byte[] imageByteArray = System.IO.File.ReadAllBytes(imageUrl);
+            byte[] imageByteArray = await DownloadImageAsync(imageUrl);
             return System.Convert.ToBase64String(imageByteArray);
         }
 
@@ -30,21 +52,6 @@ namespace GPetS.Services
                 return ImageSource.FromStream(() =>
                     new MemoryStream(System.Convert.FromBase64String(imageBase64))
                 );
-            }
-            else
-            {
-                return null;
-            }
-        }
-
-        public async Task<string> ConvertImageFileToBase64(string filePath)
-        {
-            if (!string.IsNullOrEmpty(filePath))
-            {
-                FileStream stream = File.Open(filePath, FileMode.Open);
-                byte[] bytes = new byte[stream.Length];
-                await stream.ReadAsync(bytes, 0, (int)stream.Length);
-                return System.Convert.ToBase64String(bytes);
             }
             else
             {
@@ -67,5 +74,19 @@ namespace GPetS.Services
             }
         }
 
+        public async Task<string> ConvertImageFileToBase64(string filePath)
+        {
+            if (!string.IsNullOrEmpty(filePath))
+            {
+                FileStream stream = File.Open(filePath, FileMode.Open);
+                byte[] bytes = new byte[stream.Length];
+                await stream.ReadAsync(bytes, 0, (int)stream.Length);
+                return System.Convert.ToBase64String(bytes);
+            }
+            else
+            {
+                return null;
+            }
+        }
     }
 }

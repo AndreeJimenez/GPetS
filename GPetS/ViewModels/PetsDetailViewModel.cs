@@ -48,6 +48,13 @@ namespace GPetS.ViewModels
             set => SetProperty(ref imageSource_, value);
         }
 
+        string _ImageBase64;
+        public string ImageBase64
+        {
+            get => _ImageBase64;
+            set => SetProperty(ref _ImageBase64, value);
+        }
+
         string _ImageUrl;
         public string ImageUrl
         {
@@ -116,35 +123,34 @@ namespace GPetS.ViewModels
             PetSelected = new PetModel();
         }
 
+
+
         public PetsDetailViewModel(PetModel petSelected)
         {
-            if (!string.IsNullOrEmpty(petSelected.ImageBase64))
+            /*if (!string.IsNullOrEmpty(petSelected.ImageBase64))
             {
                 ImageSource_ = new ImageService().ConvertImageFromBase64ToImageSource(petSelected.ImageBase64);
-            }
+            }*/
             PetSelected = petSelected;
+            ImageBase64 = petSelected.ImageBase64;
         }
 
         private async void SaveAction()
         {
-            IsBusy = true;
-            if (!string.IsNullOrEmpty(petSelected.ImageUrl))
+            /*if (!string.IsNullOrEmpty(petSelected.ImageUrl))
             {
                 PetSelected.ImageBase64 = await new ImageService().DownloadImageAsBase64Async(petSelected.ImageUrl);
-            }
+            }*/
             await App.PetsDatabase.SavePetAsync(PetSelected);
             PetsListViewModel.GetInstance().LoadPets();
             await Application.Current.MainPage.Navigation.PopAsync();
-            IsBusy = false;
         }
 
         private async void DeleteAction()
         {
-            IsBusy = true;
             await App.PetsDatabase.DeletePetAsync(PetSelected);
             PetsListViewModel.GetInstance().LoadPets();
             await Application.Current.MainPage.Navigation.PopAsync();
-            IsBusy = false;
         }
 
         private async void CancelAction()
@@ -158,14 +164,12 @@ namespace GPetS.ViewModels
             {
                 ID = PetSelected.ID,
                 Name = PetSelected.Name,
-                PetDate = PetSelected.PetDate,
+                ImageUrl = PetSelected.ImageUrl,
                 Gender = PetSelected.Gender,
                 Race = PetSelected.Race,
-                Weight = PetSelected.Weight,
                 Comments = PetSelected.Comments,
                 Latitude = PetSelected.Latitude,
                 Longitude = PetSelected.Longitude,
-                ImageUrl = PetSelected.ImageUrl
             }));
         }
 
@@ -206,8 +210,9 @@ namespace GPetS.ViewModels
             if (file == null)
                 return;
 
-            ImageUrl = await new ImageService().ConvertImageFileToBase64(file.Path);
-            await Application.Current.MainPage.DisplayAlert("File Location", file.Path, "OK");
+            PetSelected.ImageBase64 = ImageBase64 = await new ImageService().ConvertImageFileToBase64(file.Path);
+            //ImageUrl = await new ImageService().ConvertImageFileToBase64(file.Path);
+            //await Application.Current.MainPage.DisplayAlert("File Location", file.Path, "OK");
         }
 
         private async void SelectPictureAction()
@@ -231,7 +236,7 @@ namespace GPetS.ViewModels
             if (file == null)
                 return;
 
-            ImageUrl = await new ImageService().ConvertImageFileToBase64(file.Path);
+            PetSelected.ImageBase64 = ImageBase64 = await new ImageService().ConvertImageFileToBase64(file.Path);
         }
     }
 }

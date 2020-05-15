@@ -21,11 +21,11 @@ namespace GPetS.Views
             BindingContext = new PetsDetailViewModel();
         }
 
-        public PetsDetailPage(PetModel taskSelected)
+        public PetsDetailPage(PetModel petSelected)
         {
             InitializeComponent();
 
-            BindingContext = new PetsDetailViewModel(taskSelected);
+            BindingContext = new PetsDetailViewModel(petSelected);
         }
     }
 }

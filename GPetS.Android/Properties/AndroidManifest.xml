@@ -8,8 +8,7 @@
     android:minSdkVersion="21"
     android:targetSdkVersion="28" />
   <application
-    android:label="GPetS.Android"
-    android:usesCleartextTraffic="true">
+    android:label="GPetS.Android">
     <meta-data
       android:name="com.google.android.geo.API_KEY"
       android:value="AIzaSyD_ah4z9F3ulQBLwSrBUK5G6eHUcq1_nQE" />

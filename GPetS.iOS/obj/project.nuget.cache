@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "IvJ+jE7Bz5y9pQUFbNSBTA6Mz33NvTyZ6z5fal0ObyL0UpIzv4/NcJea4GDBTiNwNsGZkn3I5tCquCMu23+mdg==",
+  "dgSpecHash": "upwpBZspI6wIXlWOPRH+LWSTXu96NHT68Hl+8HUyq9jaO5/1D6EDlXsUfCm1DwLXczs428inMdgMteJLgwtabg==",
   "success": true,
   "projectFilePath": "C:\\Users\\andre\\OneDrive\\Escritorio\\Repositories\\GPetS\\GPetS.iOS\\GPetS.iOS.csproj",
   "expectedPackageFiles": [
@@ -11,8 +11,8 @@
     "C:\\Users\\andre\\.nuget\\packages\\sqlitepclraw.provider.sqlite3.ios_unified\\1.1.13\\sqlitepclraw.provider.sqlite3.ios_unified.1.1.13.nupkg.sha512",
     "C:\\Users\\andre\\.nuget\\packages\\xam.plugin.media\\5.0.1\\xam.plugin.media.5.0.1.nupkg.sha512",
     "C:\\Users\\andre\\.nuget\\packages\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
-    "C:\\Users\\andre\\.nuget\\packages\\xamarin.forms\\4.6.0.726\\xamarin.forms.4.6.0.726.nupkg.sha512",
-    "C:\\Users\\andre\\.nuget\\packages\\xamarin.forms.maps\\4.6.0.726\\xamarin.forms.maps.4.6.0.726.nupkg.sha512"
+    "C:\\Users\\andre\\.nuget\\packages\\xamarin.forms\\4.6.0.772\\xamarin.forms.4.6.0.772.nupkg.sha512",
+    "C:\\Users\\andre\\.nuget\\packages\\xamarin.forms.maps\\4.6.0.772\\xamarin.forms.maps.4.6.0.772.nupkg.sha512"
   ],
   "logs": []
 }

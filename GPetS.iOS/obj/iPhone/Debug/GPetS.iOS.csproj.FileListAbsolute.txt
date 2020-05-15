@@ -57,3 +57,13 @@ C:\Users\andre\OneDrive\Escritorio\Repositories\GPetS\GPetS.iOS\obj\iPhone\Debug
 C:\Users\andre\OneDrive\Escritorio\Repositories\GPetS\GPetS.iOS\obj\iPhone\Debug\GPetS.iOS.csproj.CopyComplete
 C:\Users\andre\OneDrive\Escritorio\Repositories\GPetS\GPetS.iOS\obj\iPhone\Debug\GPetS.iOS.exe
 C:\Users\andre\OneDrive\Escritorio\Repositories\GPetS\GPetS.iOS\obj\iPhone\Debug\GPetS.iOS.pdb
+C:\Users\andre\OneDrive\Escritorio\Repositories\GPetS\GPetS.iOS\bin\iPhone\Debug\Newtonsoft.Json.dll
+C:\Users\andre\OneDrive\Escritorio\Repositories\GPetS\GPetS.iOS\bin\iPhone\Debug\SQLite-net.dll
+C:\Users\andre\OneDrive\Escritorio\Repositories\GPetS\GPetS.iOS\bin\iPhone\Debug\SQLitePCLRaw.batteries_green.dll
+C:\Users\andre\OneDrive\Escritorio\Repositories\GPetS\GPetS.iOS\bin\iPhone\Debug\SQLitePCLRaw.batteries_v2.dll
+C:\Users\andre\OneDrive\Escritorio\Repositories\GPetS\GPetS.iOS\bin\iPhone\Debug\SQLitePCLRaw.core.dll
+C:\Users\andre\OneDrive\Escritorio\Repositories\GPetS\GPetS.iOS\bin\iPhone\Debug\SQLitePCLRaw.provider.sqlite3.dll
+C:\Users\andre\OneDrive\Escritorio\Repositories\GPetS\GPetS.iOS\bin\iPhone\Debug\Plugin.Media.dll
+C:\Users\andre\OneDrive\Escritorio\Repositories\GPetS\GPetS.iOS\bin\iPhone\Debug\Plugin.Media.pdb
+C:\Users\andre\OneDrive\Escritorio\Repositories\GPetS\GPetS.iOS\bin\iPhone\Debug\Xamarin.Forms.Maps.dll
+C:\Users\andre\OneDrive\Escritorio\Repositories\GPetS\GPetS.iOS\bin\iPhone\Debug\Xamarin.Forms.Maps.iOS.dll

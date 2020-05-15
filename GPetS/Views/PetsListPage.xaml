@@ -10,7 +10,7 @@
     <ContentPage.ToolbarItems>
         <ToolbarItem
             Text="+"
-            Command="{Binding NewPetCommand}">
+            Command="{Binding NewCommand}">
             <ToolbarItem.IconImageSource>
                 <OnPlatform
                     x:TypeArguments="ImageSource">
@@ -58,19 +58,19 @@
                                 Aspect="AspectFill"
                                 VerticalOptions="CenterAndExpand"
                                 HorizontalOptions="CenterAndExpand"
-                                Source="{Binding ImageUrl, Converter={StaticResource ImageConverter}}"
+                                Source="{Binding ImageBase64, Converter={StaticResource ImageConverter}}"
                                 d:Source="not_found" />
                             <Label
                                 Grid.Row="0"
                                 Grid.Column="1"
                                 Text="{Binding Name}"
                                 d:Text="Name"
-                                TextColor="White"
+                                TextColor="#0B3C5D"
                                 FontSize="Large" />
                             <Label
                                 Grid.Row="1"
                                 Grid.Column="1"
-                                TextColor="White"
+                                TextColor="#0B3C5D"
                                 d:Text="Birthday"
                                 Text="{Binding PetDate, StringFormat='{0:dd MMM yy}'}" />
                         </Grid>

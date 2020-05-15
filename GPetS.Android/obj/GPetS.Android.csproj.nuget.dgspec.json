@@ -52,11 +52,11 @@
             },
             "Xamarin.Forms": {
               "target": "Package",
-              "version": "[4.6.0.726, )"
+              "version": "[4.6.0.772, )"
             },
             "Xamarin.Forms.Maps": {
               "target": "Package",
-              "version": "[4.6.0.726, )"
+              "version": "[4.6.0.772, )"
             }
           }
         }
@@ -120,11 +120,11 @@
             },
             "Xamarin.Forms": {
               "target": "Package",
-              "version": "[4.6.0.726, )"
+              "version": "[4.6.0.772, )"
             },
             "Xamarin.Forms.Maps": {
               "target": "Package",
-              "version": "[4.6.0.726, )"
+              "version": "[4.6.0.772, )"
             },
             "sqlite-net-pcl": {
               "target": "Package",
