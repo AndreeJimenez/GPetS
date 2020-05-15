@@ -11,8 +11,17 @@ namespace GPetS.Converters
     {
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
-            DateTime birthdate = DateTime.Parse(value.ToString());
-            return "";
+            DateTime birthdate = (DateTime)value;
+            if(value == null || string.IsNullOrEmpty(value.ToString()) || DateTime.Today < birthdate)
+            {
+                return "0";
+            }
+            int petAge = DateTime.Today.Year - birthdate.Year;
+            if( birthdate.Month > DateTime.Today.Month)
+            {
+                --petAge;
+            }
+            return petAge;
         }
 
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)

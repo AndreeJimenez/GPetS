@@ -25,9 +25,6 @@ namespace GPetS.ViewModels
         Command _GetLocationCommand;
         public Command GetLocationCommand => _GetLocationCommand ?? (_GetLocationCommand = new Command(GetLocationAction));
 
-        Command cancelCommand;
-        public Command CancelCommand => cancelCommand ?? (cancelCommand = new Command(CancelAction));
-
         Command _TakePictureCommand;
         public Command TakePictureCommand => _TakePictureCommand ?? (_TakePictureCommand = new Command(TakePictureAction));
 
@@ -127,20 +124,12 @@ namespace GPetS.ViewModels
 
         public PetsDetailViewModel(PetModel petSelected)
         {
-            /*if (!string.IsNullOrEmpty(petSelected.ImageBase64))
-            {
-                ImageSource_ = new ImageService().ConvertImageFromBase64ToImageSource(petSelected.ImageBase64);
-            }*/
             PetSelected = petSelected;
             ImageBase64 = petSelected.ImageBase64;
         }
 
         private async void SaveAction()
         {
-            /*if (!string.IsNullOrEmpty(petSelected.ImageUrl))
-            {
-                PetSelected.ImageBase64 = await new ImageService().DownloadImageAsBase64Async(petSelected.ImageUrl);
-            }*/
             await App.PetsDatabase.SavePetAsync(PetSelected);
             PetsListViewModel.GetInstance().LoadPets();
             await Application.Current.MainPage.Navigation.PopAsync();
@@ -153,10 +142,6 @@ namespace GPetS.ViewModels
             await Application.Current.MainPage.Navigation.PopAsync();
         }
 
-        private async void CancelAction()
-        {
-            await Application.Current.MainPage.Navigation.PopAsync();
-        }
 
         private void MapAction()
         {
@@ -164,7 +149,7 @@ namespace GPetS.ViewModels
             {
                 ID = PetSelected.ID,
                 Name = PetSelected.Name,
-                ImageUrl = PetSelected.ImageUrl,
+                ImageBase64 = PetSelected.ImageBase64,
                 Gender = PetSelected.Gender,
                 Race = PetSelected.Race,
                 Comments = PetSelected.Comments,
@@ -211,8 +196,6 @@ namespace GPetS.ViewModels
                 return;
 
             PetSelected.ImageBase64 = ImageBase64 = await new ImageService().ConvertImageFileToBase64(file.Path);
-            //ImageUrl = await new ImageService().ConvertImageFileToBase64(file.Path);
-            //await Application.Current.MainPage.DisplayAlert("File Location", file.Path, "OK");
         }
 
         private async void SelectPictureAction()

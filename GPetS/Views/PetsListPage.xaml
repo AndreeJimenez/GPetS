@@ -16,7 +16,7 @@
                     x:TypeArguments="ImageSource">
                     <On
                         Platform="Android, UWP"
-                        Value="plus.png" />
+                        Value="add.png" />
                 </OnPlatform>
             </ToolbarItem.IconImageSource>
         </ToolbarItem>
@@ -24,6 +24,7 @@
     <ContentPage.Resources>
         <ResourceDictionary>
             <converter:ImageConverter x:Key="ImageConverter" />
+            <converter:AgeConverter x:Key="AgeConverter" />
         </ResourceDictionary>
     </ContentPage.Resources>
     <ContentPage.Content>
@@ -72,7 +73,13 @@
                                 Grid.Column="1"
                                 TextColor="#0B3C5D"
                                 d:Text="Birthday"
-                                Text="{Binding PetDate, StringFormat='{0:dd MMM yy}'}" />
+                                Text="Age: " />
+                            <Label
+                                Grid.Row="1"
+                                Grid.Column="2"
+                                TextColor="#0B3C5D"
+                                d:Text="Birthday"
+                                Text="{Binding PetDate, Converter={StaticResource AgeConverter}} " />
                         </Grid>
                     </DataTemplate>
                 </CollectionView.ItemTemplate>

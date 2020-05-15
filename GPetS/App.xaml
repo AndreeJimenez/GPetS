@@ -7,7 +7,7 @@
              x:Class="GPetS.App">
     <Application.Resources>
         <ResourceDictionary>
-            <Color x:Key="primaryColor">#1D2731</Color>
+            <Color x:Key="primaryColor">#149c94</Color>
             <Color x:Key="secundaryColor">#0B3C5D</Color>
             <Color x:Key="textColor">#D9B310</Color>
         </ResourceDictionary>

@@ -108,7 +108,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\andre\OneDrive\Escritorio\Repositories\GPetS\GPetS\bin\Debug\netstandard2.0\GPetS.dll">
       <PackagePath>GPetS.dll</PackagePath>
-      <Modified>2020-05-15T01:15:39.746</Modified>
+      <Modified>2020-05-15T02:27:46.368</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Microsoft\Xamarin\NuGet\win2d.uwp\1.20.0\lib\uap10.0\Microsoft.Graphics.Canvas.winmd">
       <PackagePath>Microsoft.Graphics.Canvas.winmd</PackagePath>

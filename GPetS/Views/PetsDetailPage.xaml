@@ -11,6 +11,7 @@
     <ContentPage.Resources>
         <ResourceDictionary>
             <converter:ImageConverter x:Key="ImageConverter" />
+            <converter:AgeConverter x:Key="AgeConverter" />
         </ResourceDictionary>
     </ContentPage.Resources>
     <ContentPage.ToolbarItems>
@@ -44,9 +45,6 @@
                 <Entry
                     Placeholder="Longitud"
                     Text="{Binding PetSelected.Longitude}" />
-                <Button
-                    Text="Get Location"
-                    Command="{Binding GetLocationCommand}" />
                 <Image
                     Source="{Binding ImageBase64, Converter={StaticResource ImageConverter}}" />
                 <Button

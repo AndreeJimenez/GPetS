@@ -13,8 +13,6 @@ namespace GPetS.Models
 
         public string Name { get; set; }
 
-        public string ImageUrl { get; set; }
-
         public string ImageBase64 { get; set; }
 
         public DateTime PetDate { get; set; }

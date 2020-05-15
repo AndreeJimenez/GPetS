@@ -25,8 +25,9 @@ namespace GPetS.Views
                     Distance.FromMiles(.5)
             ));
 
-            string imagePath = new ImageService().SaveImageFromBase64(petSelected.ImageUrl, petSelected.ID);
-            petSelected.ImageUrl = imagePath;
+            string imagePath = new ImageService().SaveImageFromBase64(petSelected.ImageBase64, petSelected.ID);
+            petSelected.ImageBase64 = imagePath;
+            //petSelected.ImageBase64 = new ImageService().SaveImageFromBase64(petSelected.ImageBase64);
             MapPet.Pet = petSelected;
 
             MapPet.Pins.Add(
@@ -39,9 +40,9 @@ namespace GPetS.Views
             );
 
             Name.Text = petSelected.Name;
-            Date.Text = petSelected.PetDate.ToShortDateString();
-            Gender.Text = petSelected.Gender;
             Race.Text = petSelected.Race;
+            Gender.Text = petSelected.Gender;
+            Date.Text = petSelected.PetDate.ToShortDateString();
             Comments.Text = petSelected.Comments;
         }
     }

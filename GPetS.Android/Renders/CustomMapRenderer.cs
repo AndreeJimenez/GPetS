@@ -68,7 +68,7 @@ namespace GPetS.Droid.Renders
                 var infoName = view.FindViewById<TextView>(Resource.Id.MarkerWindowName);
                 var infoComments = view.FindViewById<TextView>(Resource.Id.MarkerWindowComments);
 
-                if (infoImage != null) infoImage.SetImageBitmap(BitmapFactory.DecodeFile(Pet.ImageUrl));
+                if (infoImage != null) infoImage.SetImageBitmap(BitmapFactory.DecodeFile(Pet.ImageBase64));
                 if (infoName != null) infoName.Text = Pet.Name;
                 if (infoComments != null) infoComments.Text = Pet.Comments;
 
