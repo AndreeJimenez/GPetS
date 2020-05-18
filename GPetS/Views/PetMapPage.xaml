@@ -28,9 +28,6 @@
                     x:Name="Name"
                     HorizontalOptions="Center" />
                 <Label
-                    x:Name="Date"
-                    HorizontalOptions="Center" />
-                <Label
                     x:Name="Gender"
                     HorizontalOptions="Center" />
                 <Label

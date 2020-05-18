@@ -6,7 +6,8 @@
              xmlns:converter="clr-namespace:GPetS.Converters"
              mc:Ignorable="d"
              x:Class="GPetS.Views.PetsListPage"
-             Title="GPetS">
+             Title="GPetS"
+             BackgroundImageSource="art.jpg">
     <ContentPage.ToolbarItems>
         <ToolbarItem
             Text="+"

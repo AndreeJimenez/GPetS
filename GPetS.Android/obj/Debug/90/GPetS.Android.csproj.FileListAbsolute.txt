@@ -568,3 +568,5 @@ C:\Users\andre\OneDrive\Escritorio\Repositories\GPetS\GPetS.Android\obj\Debug\90
 C:\Users\andre\OneDrive\Escritorio\Repositories\GPetS\GPetS.Android\obj\Debug\90\stamp\_GenerateJavaStubs.stamp
 C:\Users\andre\OneDrive\Escritorio\Repositories\GPetS\GPetS.Android\obj\Debug\90\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\andre\OneDrive\Escritorio\Repositories\GPetS\GPetS.Android\obj\Debug\90\stamp\_ResolveLibraryProjectImports.stamp
+C:\Users\andre\OneDrive\Escritorio\Repositories\GPetS\GPetS.Android\obj\Debug\90\res\drawable\art.jpg
+C:\Users\andre\OneDrive\Escritorio\Repositories\GPetS\GPetS.Android\obj\Debug\90\res\drawable\perro.jpg

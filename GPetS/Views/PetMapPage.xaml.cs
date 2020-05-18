@@ -42,7 +42,6 @@ namespace GPetS.Views
             Name.Text = petSelected.Name;
             Race.Text = petSelected.Race;
             Gender.Text = petSelected.Gender;
-            Date.Text = petSelected.PetDate.ToShortDateString();
             Comments.Text = petSelected.Comments;
         }
     }
