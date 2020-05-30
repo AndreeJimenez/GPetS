@@ -7,7 +7,7 @@
              mc:Ignorable="d"
              x:Class="GPetS.Views.PetsListPage"
              Title="GPetS"
-             BackgroundImageSource="art.jpg">
+             BackgroundImageSource="paw_landscape.jpg">
     <ContentPage.ToolbarItems>
         <ToolbarItem
             Text="+"

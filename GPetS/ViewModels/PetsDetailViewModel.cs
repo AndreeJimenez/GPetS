@@ -170,7 +170,9 @@ namespace GPetS.ViewModels
                     Longitude = location.Longitude;
                 }
             }
-            catch (Exception ex){}
+            catch (Exception ex){
+                throw ex;
+            }
         }
 
         private async void TakePictureAction()

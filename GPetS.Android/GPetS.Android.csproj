@@ -57,10 +57,10 @@
     <PackageReference Include="Xam.Plugin.Media">
       <Version>5.0.1</Version>
     </PackageReference>
-    <PackageReference Include="Xamarin.Forms" Version="4.6.0.772" />
+    <PackageReference Include="Xamarin.Forms" Version="4.6.0.800" />
     <PackageReference Include="Xamarin.Essentials" Version="1.5.3.2" />
     <PackageReference Include="Xamarin.Forms.Maps">
-      <Version>4.6.0.772</Version>
+      <Version>4.6.0.800</Version>
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
@@ -116,7 +116,10 @@
     <AndroidResource Include="Resources\drawable\art.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\perro.jpg" />
+    <AndroidResource Include="Resources\drawable\winter_landscape.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\paw_landscape.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

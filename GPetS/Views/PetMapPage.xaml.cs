@@ -27,7 +27,6 @@ namespace GPetS.Views
 
             string imagePath = new ImageService().SaveImageFromBase64(petSelected.ImageBase64, petSelected.ID);
             petSelected.ImageBase64 = imagePath;
-            //petSelected.ImageBase64 = new ImageService().SaveImageFromBase64(petSelected.ImageBase64);
             MapPet.Pet = petSelected;
 
             MapPet.Pins.Add(

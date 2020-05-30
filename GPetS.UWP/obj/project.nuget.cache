@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "lghmPylwaIL5MGfL4Q8J6iRkXfCuXeWnV7lloO6dFDwt5Ugeag+cFXSDV6cpXJVBLLN6Do7qq1R4S5gWor9gHQ==",
+  "dgSpecHash": "5auzZAPewAyPEDv143Yq4jY1YbQ1hcLXSGygYCbFAworoOYcKsRItomL2PRVCVnvz/7Mfo+pHsrahcd+9Gf3gQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\andre\\OneDrive\\Escritorio\\Repositories\\GPetS\\GPetS.UWP\\GPetS.UWP.csproj",
   "expectedPackageFiles": [
@@ -29,16 +29,18 @@
     "C:\\Users\\andre\\.nuget\\packages\\runtime.win10-x86.microsoft.net.native.sharedlibrary\\2.2.7-rel-28605-00\\runtime.win10-x86.microsoft.net.native.sharedlibrary.2.2.7-rel-28605-00.nupkg.sha512",
     "C:\\Users\\andre\\.nuget\\packages\\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\\2.2.10\\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk.2.2.10.nupkg.sha512",
     "C:\\Users\\andre\\.nuget\\packages\\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\\6.2.10\\runtime.win10-x86.microsoft.netcore.universalwindowsplatform.6.2.10.nupkg.sha512",
-    "C:\\Users\\andre\\.nuget\\packages\\sqlite-net-pcl\\1.6.292\\sqlite-net-pcl.1.6.292.nupkg.sha512",
-    "C:\\Users\\andre\\.nuget\\packages\\sqlitepclraw.bundle_green\\1.1.13\\sqlitepclraw.bundle_green.1.1.13.nupkg.sha512",
-    "C:\\Users\\andre\\.nuget\\packages\\sqlitepclraw.core\\1.1.13\\sqlitepclraw.core.1.1.13.nupkg.sha512",
-    "C:\\Users\\andre\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3.v140\\1.1.13\\sqlitepclraw.lib.e_sqlite3.v140.1.1.13.nupkg.sha512",
-    "C:\\Users\\andre\\.nuget\\packages\\sqlitepclraw.provider.e_sqlite3.uwp10\\1.1.13\\sqlitepclraw.provider.e_sqlite3.uwp10.1.1.13.nupkg.sha512",
+    "C:\\Users\\andre\\.nuget\\packages\\sqlite-net-pcl\\1.7.335\\sqlite-net-pcl.1.7.335.nupkg.sha512",
+    "C:\\Users\\andre\\.nuget\\packages\\sqlitepclraw.bundle_green\\2.0.3\\sqlitepclraw.bundle_green.2.0.3.nupkg.sha512",
+    "C:\\Users\\andre\\.nuget\\packages\\sqlitepclraw.core\\2.0.3\\sqlitepclraw.core.2.0.3.nupkg.sha512",
+    "C:\\Users\\andre\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3\\2.0.3\\sqlitepclraw.lib.e_sqlite3.2.0.3.nupkg.sha512",
+    "C:\\Users\\andre\\.nuget\\packages\\sqlitepclraw.provider.e_sqlite3\\2.0.3\\sqlitepclraw.provider.e_sqlite3.2.0.3.nupkg.sha512",
+    "C:\\Users\\andre\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
+    "C:\\Users\\andre\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.2\\system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\win2d.uwp\\1.20.0\\win2d.uwp.1.20.0.nupkg.sha512",
     "C:\\Users\\andre\\.nuget\\packages\\xam.plugin.media\\5.0.1\\xam.plugin.media.5.0.1.nupkg.sha512",
     "C:\\Users\\andre\\.nuget\\packages\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
-    "C:\\Users\\andre\\.nuget\\packages\\xamarin.forms\\4.6.0.772\\xamarin.forms.4.6.0.772.nupkg.sha512",
-    "C:\\Users\\andre\\.nuget\\packages\\xamarin.forms.maps\\4.6.0.772\\xamarin.forms.maps.4.6.0.772.nupkg.sha512"
+    "C:\\Users\\andre\\.nuget\\packages\\xamarin.forms\\4.6.0.800\\xamarin.forms.4.6.0.800.nupkg.sha512",
+    "C:\\Users\\andre\\.nuget\\packages\\xamarin.forms.maps\\4.6.0.800\\xamarin.forms.maps.4.6.0.800.nupkg.sha512"
   ],
   "logs": []
 }

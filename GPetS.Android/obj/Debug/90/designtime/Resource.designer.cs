@@ -11422,13 +11422,16 @@ namespace GPetS.Droid
 			public const int not_found = 2131165305;
 			
 			// aapt resource value: 0x7F070086
-			public const int perro = 2131165318;
+			public const int paw_landscape = 2131165318;
 			
 			// aapt resource value: 0x7F070087
 			public const int tooltip_frame_dark = 2131165319;
 			
 			// aapt resource value: 0x7F070088
 			public const int tooltip_frame_light = 2131165320;
+			
+			// aapt resource value: 0x7F070089
+			public const int winter_landscape = 2131165321;
 			
 			static Drawable()
 			{
